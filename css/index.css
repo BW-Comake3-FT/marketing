@@ -129,42 +129,193 @@ table {
 html {
   font-size: 62.5%;
 }
-section {
+.sectionOne {
   max-width: 100%;
   font-family: 'Open Sans', sans-serif;
   display: flex;
   background-color: #F2EAEA;
 }
-section .leftHalf {
+.sectionOne .leftHalf {
   width: 40%;
   height: 60vh;
-  margin: 6% 0% 1% 8%;
+  margin: 6% 0% 0% 8%;
 }
-section .leftHalf h2 {
+.sectionOne .leftHalf h2 {
   font-size: 5.6rem;
+  color: #424244;
 }
-section .leftHalf h3 {
+.sectionOne .leftHalf h3 {
+  color: #696969;
   font-size: 6.8rem;
-  margin-top: 4%;
+  margin: 4% 0% 9% 0%;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.1;
 }
-section .leftHalf button {
+.sectionOne .leftHalf button {
   font-size: 2.1rem;
-  color: white;
+  color: #ffffff;
   background-color: #C91757;
   padding: 2% 5%;
   border-radius: 10px;
-  margin-top: 9%;
 }
-section .rightHalf {
+.sectionOne .rightHalf {
   width: 40%;
   height: 60vh;
   margin: 2% 6%;
 }
-section .rightHalf img {
+.sectionOne .rightHalf img {
   margin: 7% 0% 3% 0%;
   border-radius: 10px;
+}
+.sectionTwo {
+  width: 60%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0% 5% 8%;
+}
+.sectionTwo h4 {
+  font-size: 4.8rem;
+  color: #424244;
+}
+.sectionTwo h5 {
+  font-size: 3.6rem;
+  color: #44474C;
+  line-height: 1.4;
+  margin: 4% 8% 3% 0;
+}
+.sectionThree {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F2EAEA;
+}
+.sectionThree h4 {
+  font-size: 4.8rem;
+  margin: 5% 0% 5% 8%;
+  color: #424244;
+}
+.sectionThree .threeSteps {
+  list-style-position: inside;
+  margin: 6% 16% 6% 3%;
+  color: #44474C;
+}
+.sectionThree .threeSteps li {
+  font-size: 2.4rem;
+  padding: 3% 0%;
+  list-style-type: square;
+}
+.sectionThree .threeSteps li:nth-child(1) {
+  color: #C91757;
+}
+.sectionFour {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.sectionFour h4 {
+  font-size: 4.8rem;
+  margin: 4% 0% 3% 8%;
+  color: #424244;
+}
+.sectionFour .reviews {
+  display: flex;
+  margin: 0% 2% 5% 8%;
+}
+.sectionFour .reviews .userReview {
+  width: 31%;
+  margin-right: 7%;
+  justify-content: center;
+}
+.sectionFour .reviews .userReview p {
+  font-size: 2.4rem;
+  color: #44474C;
+  line-height: 1.5;
+}
+.sectionFour .reviews .userReview h5 {
+  font-size: 2.4rem;
+  margin-top: 5%;
+  color: #424244;
+}
+.sectionFive {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #F2EAEA;
+}
+.sectionFive h4 {
+  font-size: 4.8rem;
+  margin: 4% 0% 4% 8%;
+  color: #424244;
+}
+.sectionFive .impact {
+  display: flex;
+  justify-content: center;
+  margin: 0% 1% 5% 8%;
+}
+.sectionFive .impact .roadWork {
+  width: 31%;
+  margin-right: 7%;
+  justify-content: center;
+}
+.sectionFive .impact .roadWork img {
+  width: 100%;
+  border-radius: 10px;
+}
+.sectionFive .impact .roadWork h5 {
+  font-size: 2.4rem;
+  margin-top: 5%;
+  line-height: 1.5;
+  color: #44474C;
+}
+.sectionSix {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.sectionSix form {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionSix form input {
+  width: 65%;
+  height: 30%;
+  font-size: 2.1;
+  border: 1px solid #707376;
+  border-radius: 10px;
+}
+.sectionSix ::placeholder {
+  font-size: 2.1rem;
+  color: #707376;
+  opacity: 1;
+  padding-left: 2%;
+}
+.sectionSix button {
+  font-size: 2.1rem;
+  color: #ffffff;
+  background-color: #C91757;
+  padding: 2% 5%;
+  border-radius: 10px;
+  margin: 6% 0% 6% 1%;
+}
+footer {
+  background-color: #008080;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+footer p {
+  font-size: 2.1rem;
+  color: #ffffff;
+  padding: 2%;
 }
 header {
   display: flex;
@@ -177,11 +328,11 @@ header .navBar {
   align-items: center;
   padding: 1%;
   width: 100%;
-  background-color: teal;
+  background-color: #008080;
 }
 header .navBar h1 {
   font-size: 3.2rem;
-  color: white;
+  color: #ffffff;
   padding: 0% 2%;
   width: 10%;
 }
@@ -189,7 +340,7 @@ header .navBar h1 span {
   color: #C91757;
 }
 header .navBar h1 i {
-  color: black;
+  color: #424244;
 }
 header .navBar .navLinks {
   width: 21%;
@@ -197,6 +348,6 @@ header .navBar .navLinks {
 header .navBar .navLinks a {
   font-size: 2.1rem;
   text-decoration: none;
-  color: white;
-  padding: 0 8%;
+  color: #ffffff;
+  padding: 0 7%;
 }
