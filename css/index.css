@@ -129,6 +129,10 @@ table {
 html {
   font-size: 62.5%;
 }
+.mainContent2 {
+  margin: 0% 8%;
+  font-family: 'Open Sans', sans-serif;
+}
 .sectionOne {
   max-width: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -167,6 +171,34 @@ html {
   margin: 7% 0% 3% 0%;
   border-radius: 10px;
 }
+.section1 {
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-color: #F2EAEA;
+  padding: 5% 0%;
+}
+.section1 .sideL {
+  width: 40%;
+}
+.section1 .sideL h4 {
+  font-size: 4.8rem;
+  color: #424244;
+}
+.section1 .sideL p {
+  font-size: 2.4rem;
+  color: #44474C;
+  line-height: 1.5;
+  margin-top: 4%;
+}
+.section1 .sideR {
+  width: 40%;
+}
+.section1 .sideR img {
+  width: 100%;
+  border-radius: 10px;
+}
 .sectionTwo {
   width: 60%;
   font-family: 'Open Sans', sans-serif;
@@ -179,10 +211,34 @@ html {
   color: #424244;
 }
 .sectionTwo h5 {
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   color: #44474C;
   line-height: 1.4;
-  margin: 4% 8% 3% 0;
+  margin: 4% 0% 3% 0%;
+}
+.section2 {
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 5% 0%;
+}
+.section2 .sideL {
+  width: 40%;
+}
+.section2 .sideL img {
+  width: 100%;
+  border-radius: 10px;
+}
+.section2 .sideR {
+  width: 40%;
+}
+.section2 .sideR p {
+  font-size: 2.4rem;
+  color: #44474C;
+  line-height: 1.5;
+  margin-top: 14%;
 }
 .sectionThree {
   width: 100%;
@@ -209,6 +265,68 @@ html {
 }
 .sectionThree .threeSteps li:nth-child(1) {
   color: #C91757;
+}
+.section3 {
+  max-width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #F2EAEA;
+  padding: 5% 0% 10% 0%;
+}
+.section3 .ourTeam {
+  font-size: 4.8rem;
+  color: #424244;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.section3 .devGroupOne {
+  margin-bottom: 4%;
+}
+.section3 .devGroupOne,
+.section3 .devGroupTwo {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section3 .devGroupOne .dev,
+.section3 .devGroupTwo .dev {
+  width: 25%;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  text-align: center;
+}
+.section3 .devGroupOne .dev img,
+.section3 .devGroupTwo .dev img {
+  width: 80%;
+  border-radius: 50%;
+}
+.section3 .devGroupOne .dev h4,
+.section3 .devGroupTwo .dev h4 {
+  color: #C91757;
+  margin-top: 5%;
+}
+.section3 .devGroupOne .dev h5,
+.section3 .devGroupTwo .dev h5 {
+  font-weight: 300;
+  margin-top: 3%;
+  color: #44474C;
+}
+.section3 .devGroupOne .dev i,
+.section3 .devGroupTwo .dev i {
+  margin-top: 5%;
+  padding: 0% 1%;
+  color: #008080;
+}
+.section3 .devGroupOne .dev p,
+.section3 .devGroupTwo .dev p {
+  font-size: 2.4rem;
+  color: #44474C;
+  line-height: 1.5;
+  margin-top: 4%;
+  text-align: left;
+  padding-left: 10%;
 }
 .sectionFour {
   width: 100%;
@@ -288,7 +406,7 @@ html {
 .sectionSix form input {
   width: 65%;
   height: 30%;
-  font-size: 2.1;
+  font-size: 2.1rem;
   border: 1px solid #707376;
   border-radius: 10px;
 }
