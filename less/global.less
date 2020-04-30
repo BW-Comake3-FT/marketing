@@ -1,0 +1,229 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    // background-color: teal;
+}
+.sectionOne {
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    background-color: @bg-color;
+
+    .leftHalf {
+        width: 40%;
+        height: 60vh;
+        margin: 6% 0% 0% 8%;
+
+        h2 {
+            font-size: 5.6rem;
+            color: @headingtext-color;
+        }
+
+        h3{
+            color: @herotext-color;
+            font-size: 6.8rem;
+            margin: 4% 0% 9% 0%;
+            font-weight: 300;
+            line-height: 1.1;
+        }
+
+        button {
+            font-size: 2.1rem;
+            color: @white;
+            background-color: @raspberry;
+            padding: 2% 5%;
+            border-radius: 10px;
+        }
+    }
+
+    .rightHalf {
+        width: 40%;
+        height: 60vh;
+        margin: 2% 6%;
+
+        img {
+            margin: 7% 0% 3% 0%;
+            border-radius: 10px;
+        }
+    }
+}
+
+.sectionTwo {
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0% 5% 8%;
+
+    h4 {
+        font-size: 4.8rem;
+        color: @headingtext-color;
+    }
+
+    h5 {
+        font-size: 3.6rem;
+        color: @maintext-color;
+        line-height: 1.4;
+        margin: 4% 8% 3% 0;
+    }
+}
+
+.sectionThree {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @bg-color;
+
+    h4 {
+        font-size: 4.8rem;
+        margin: 5% 0% 5% 8%;
+        color: @headingtext-color;
+    }
+
+    .threeSteps {
+        list-style-position: inside;
+        margin: 6% 16% 6% 3%; 
+        color: @maintext-color;
+        
+        li {
+            font-size: 2.4rem;
+            padding: 3% 0%;
+            list-style-type: square;
+        }
+
+        li:nth-child(1){
+            color: @raspberry;
+        }
+    }
+}
+
+.sectionFour {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 4.8rem;
+        margin: 4% 0% 3% 8%;
+        color: @headingtext-color;
+    }
+
+    .reviews {
+        display: flex;
+        margin: 0% 2% 5% 8%;
+        
+        .userReview {
+            width: 31%;
+            margin-right: 7%;
+            justify-content: center;
+            
+            p {
+                font-size: 2.4rem;
+                color: @maintext-color;
+                line-height: 1.5;
+            }
+
+            h5 {
+                font-size: 2.4rem;
+                margin-top: 5%;
+                color: @headingtext-color;
+            }
+        }
+    }
+}
+
+.sectionFive {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EAEA;
+
+    h4 {
+        font-size: 4.8rem;
+        margin: 4% 0% 4% 8%;
+        color: @headingtext-color;
+    }
+
+    .impact {
+        display: flex;
+        justify-content: center;
+        margin: 0% 1% 5% 8%; 
+
+        .roadWork {
+            width: 31%;
+            margin-right: 7%;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            h5 {
+                font-size: 2.4rem;
+                margin-top: 5%;
+                line-height: 1.5;
+                color: @maintext-color;
+            }
+        }
+    }
+}
+
+.sectionSix {
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    form {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        input {
+            width: 65%;
+            height: 30%;
+            font-size: 2.1;
+            border: 1px solid @placeholdertext-color;
+            border-radius: 10px;
+        }
+    }
+
+
+    ::placeholder {
+        font-size: 2.1rem;
+        color: @placeholdertext-color;
+        opacity: 1;
+        padding-left: 2%;
+
+    }
+
+    button {
+        font-size: 2.1rem;
+        color: @white;
+        background-color: @raspberry;
+        padding: 2% 5%;
+        border-radius: 10px;
+        margin: 6% 0% 6% 1%;
+    }
+}
+
+footer {
+    background-color: @teal;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    p {
+        font-size: 2.1rem;
+        color: @white;
+        padding: 2%;
+    }
+}
