@@ -1797,6 +1797,7 @@ header .navBar .navLinks a:hover {
   .section2 .sideL img {
     width: 100%;
     border-radius: 10px;
+    margin: 4% 0%;
   }
   .section2 .sideR {
     width: 100%;
