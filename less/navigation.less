@@ -2,21 +2,20 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2% auto;
-
+    background-color: @teal;
+                
     .navBar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1%;
+        padding: 1.5% 0%;
         width: 100%;
-        background-color: @teal;
-        // padding: 2% auto;
+        margin: 0% 8%;
 
         h1 {
+            font-family: "Roboto Slab";
             font-size: @logotext-size;
             color: @white;
-            padding: 0% 2%;
-            width: 10%;
 
             span {
                 color: @raspberry;
@@ -28,14 +27,133 @@ header {
         }
 
         .navLinks {
-            width: 21%;
+            display: flex;
 
             a {
+                font-family: "Open Sans", sans-serif;
                 font-size: @navtext-size;
                 text-decoration: none;
                 color: @white;
-                padding: 0 7%;
+            }
+
+            a:hover {
+                color: @raspberry;
+                text-decoration: underline;
             }
         }
     }
 }
+
+// Media queries 
+
+@media only screen and (min-width: 1000px) {
+    header.navBar {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4% 0%;
+        width: 100%;
+        margin: 0% 8%;
+    }
+
+    h1 {
+        font-family: "Roboto Slab";
+        font-size: 2.4rem;
+        color: @white;
+
+        span {
+            color: @raspberry;
+        }
+
+        i {
+            color: @headingtext-color;
+        }
+    }
+
+    .navLinks {
+        display: flex;
+
+        a {
+            font-family: "Open Sans", sans-serif;
+            font-size: 2.1rem;
+            text-decoration: none;
+            color: @white;
+            padding-left: 4rem;
+        }
+    }
+}    
+
+@media only screen and (max-width: 1000px) {
+    header.navBar {
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4% 0%;
+        width: 100%;
+        margin: 0% 8%;
+    }
+
+    h1 {
+        font-family: "Roboto Slab";
+        font-size: 2.4rem;
+        color: @white;
+
+        span {
+            color: @raspberry;
+        }
+
+        i {
+            color: @headingtext-color;
+        }
+    }
+
+    .navLinks {
+        display: flex;
+
+        a {
+            font-family: "Open Sans", sans-serif;
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @white;
+            padding-left: 2rem;
+        }
+    }
+}    
+
+@media only screen and (max-width: 500px) {
+    header.navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4% 0%;
+        width: 100%;
+        margin: 0% 8%;
+    }
+
+    h1 {
+        font-family: "Roboto Slab";
+        font-size: 2.4rem;
+        color: @white;
+
+        span {
+            color: @raspberry;
+        }
+
+        i {
+            color: @headingtext-color;
+        }
+    }
+
+    .navLinks {
+        display: flex;
+
+    }
+
+    a {
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: @white;
+        padding-left: 2rem;
+    }
+}    

@@ -2,96 +2,60 @@ html {
     font-size: 62.5%;
 }
 
-.mainContent2 {
-    margin: 0% 8%;
+.mainContent {
     font-family: 'Open Sans', sans-serif;
 }
 
 .sectionOne {
-    max-width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    background-color: @bg-color;
-
-    .leftHalf {
-        width: 40%;
-        height: 60vh;
-        margin: 6% 0% 0% 8%;
-
-        h2 {
-            font-size: @herotitleone-size;
-            color: @headingtext-color;
-        }
-
-        h3{
-            color: @herotext-color;
-            font-size: @herotitletwo-size;
-            margin: 4% 0% 9% 0%;
-            font-weight: 300;
-            line-height: 1.1;
-        }
-
-        button {
-            font-size: @buttontext-size;
-            color: @white;
-            background-color: @raspberry;
-            padding: 2% 5%;
-            border-radius: 10px;
-        }
-    }
-
-    .rightHalf {
-        width: 40%;
-        height: 60vh;
-        margin: 2% 6%;
-
-        img {
-            margin: 7% 0% 3% 0%;
-            border-radius: 10px;
-        }
-    }
-}
-
-.section1 {
-    max-width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    background-color: @bg-color;
     padding: 5% 0%;
+    .redSectDefault();
 
-    .sideL {
-        width: 40%;
+    .containerSectOne {
+        margin: 0% 8%;
+        width: 100%;
+        .redSectDefault();
 
-        h4 {
-            font-size: @maintitletext-size;
-            color: @headingtext-color;
+        .leftHalf {
+            width: 56%;
+    
+            h2 {
+                font-size: @herotitleone-size;
+                color: @headingtext-color;
+            }
+    
+            h3{
+                color: @herotext-color;
+                font-size: @herotitletwo-size;
+                margin: 4% 0% 9% 0%;
+                font-weight: 300;
+                line-height: 1.1;
+            }
+    
+            button {
+                font-size: @buttontext-size;
+                color: @white;
+                background-color: @raspberry;
+                padding: 2% 5%;
+                border-radius: 10px;
+            }
         }
     
-        p {
-            font-size: @maintext-size;
-            color: @maintext-color;
-            line-height: 1.5;
-            margin-top: 4%;
-        }
-    }
-
-    .sideR {
-        width: 40%;
-
-        img {
-            width: 100%;
-            border-radius: 10px;
+        .rightHalf {
+            width: 44%;
+    
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
         }
     }
 }
 
 .sectionTwo {
-    width: 60%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
     flex-direction: column;
-    margin: 5% 0% 5% 8%;
+    margin: 0% 8%;
+    padding: 5% 8%;
+    .whiteSectDefault();
 
     h4 {
         font-size: @maintitletext-size;
@@ -106,150 +70,57 @@ html {
     }
 }
 
-.section2 {
-    max-width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    justify-content: space-around;
-    background-color: @white;
-    padding: 5% 0%;
-
-    .sideL {
-        width: 40%;
-
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
-    }
-
-    .sideR {
-        width: 40%;
-
-        p {
-            font-size: @maintext-size;
-            color: @maintext-color;
-            line-height: 1.5;
-            margin-top: 14%;
-        }
-    }
-}
-
 .sectionThree {
-    width: 100%;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: @bg-color;
 
-    h4 {
-        font-size: @maintitletext-size;
+    .easySteps {
         margin: 5% 0% 5% 8%;
-        color: @headingtext-color;
-    }
-
-    .threeSteps {
-        list-style-position: inside;
-        margin: 6% 16% 6% 3%; 
-        color: @maintext-color;
         
-        li {
-            font-size: @maintext-size;
-            padding: 3% 0%;
-            list-style-type: square;
-        }
-
-        li:nth-child(1){
-            color: @raspberry;
+        h4 {
+            font-size: @maintitletext-size;
+            color: @headingtext-color;
         }
     }
-}
 
-.section3 {
-    max-width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: @bg-color;
-    padding: 5% 0% 10% 0%;
+    .stepsContainer {
+        margin: 6% 15% 6% 6%;
 
-    .ourTeam {
-        font-size: @maintitletext-size;
-        color: @headingtext-color;
-        margin-bottom: 5%;
-        text-align: center;
-    }
-
-    .devGroupOne {
-        margin-bottom: 4%;
-    }
-
-    .devGroupOne, .devGroupTwo {
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-
-        .dev {
-            width: 25%;
-            justify-content: space-between;
-            font-size: @maintext-size;
-            text-align: center;
-
-            img {
-                width: 80%;
-                border-radius: 50%;
-            }
-
-            h4 {
-                color:@raspberry;
-                margin-top: 5%;
-            }
-
-            h5 {
-                font-weight: 300;
-                margin-top: 3%;
-                color: @maintext-color;
-            }
-
-            i {
-                margin-top: 5%;
-                padding: 0% 1%;
-                color: @teal;
-            }
-
-            p {
+        .threeSteps {
+            list-style-position: outside;
+            color: @maintext-color;
+            
+            li {
                 font-size: @maintext-size;
-                color: @maintext-color;
-                line-height: 1.5;
-                margin-top: 4%;
-                text-align: left;
-                padding-left: 10%;
+                padding: 3% 0%;
+                list-style-type: square;
+            }
+    
+            li:nth-child(1){
+                color: @raspberry;
             }
         }
     }
 }
 
 .sectionFour {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
     flex-direction: column;
+    margin: 4% 8% 5% 8%;
+    .whiteSectDefault();
 
     h4 {
         font-size: @maintitletext-size;
-        margin: 4% 0% 3% 8%;
         color: @headingtext-color;
+        padding-bottom: 4%;
     }
 
     .reviews {
         display: flex;
-        margin: 0% 2% 5% 8%;
         
-        .userReview {
-            width: 31%;
-            margin-right: 7%;
+        .userReview1, .userReview2, .userReview3 {
             justify-content: center;
             
             p {
@@ -264,55 +135,16 @@ html {
                 color: @headingtext-color;
             }
         }
+
+        .userReview1, .userReview2 {
+            margin-right: 5%;
+        }
     }
 }
 
-// .section4 {
-//     max-width: 100%;
-//     font-family: 'Open Sans', sans-serif;
-//     display: flex;
-//     background-color: @bg-color;
-//     margin: 6% 0% 6% 0%;
-
-//     .devGroupTwo {
-//         width: 100%;
-//         display: flex;
-//         justify-content: center;
-
-//         .dev {
-//             width: 31%;
-//             margin-right: 7%;
-//             justify-content: space-between;
-//             font-size: @maintext-size;
-
-//             img {
-//                 width: 100%;
-//                 border-radius: 10px;
-//             }
-
-//             h4 {
-//                 color:@raspberry;
-//             }
-
-//             h5 {
-//                 font-weight: 300;
-//             }
-
-//             p {
-//                 font-size: @maintext-size;
-//                 color: @maintext-color;
-//                 line-height: 1.5;
-//             }
-//         }
-//     }
-// }
-
 .sectionFive {
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
     flex-direction: column;
-    background-color: #F2EAEA;
+    .redSectDefault();
 
     h4 {
         font-size: @maintitletext-size;
@@ -322,12 +154,11 @@ html {
 
     .impact {
         display: flex;
-        justify-content: center;
-        margin: 0% 1% 5% 8%; 
+        justify-content: space-between;
+        margin: 0% 8% 5% 8%; 
 
         .roadWork {
-            width: 31%;
-            margin-right: 7%;
+            width: 28%;
             justify-content: center;
 
             img {
@@ -353,14 +184,15 @@ html {
     align-content: center;
 
     form {
-        width: 60%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0% 8%;
 
         input {
-            width: 65%;
-            height: 30%;
+            width: 50%;
+            height: 24%;
             font-size: @buttontext-size;
             border: 1px solid @placeholdertext-color;
             border-radius: 10px;
@@ -380,21 +212,843 @@ html {
         font-size: @buttontext-size;
         color: @white;
         background-color: @raspberry;
-        padding: 2% 5%;
+        padding: 1.3% 4%;
         border-radius: 10px;
         margin: 6% 0% 6% 1%;
     }
 }
 
-footer {
-    background-color: @teal;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+// Media queries
 
-    p {
-        font-size: @navtext-size;
-        color: @white;
-        padding: 2%;
+@media only screen and (max-width: 1300px) {
+    .sectionOne {
+        padding: 5% 0%;
+        .redSectDefault();
+
+        .containerSectOne {
+            display: flex;
+            margin: 0% 8%;
+            width: 100%;
+            // flex-direction: column;
+            .redSectDefault();
+
+            .leftHalf {
+                width: 100%;
+
+                h2 {
+                    font-size: 4.6rem;
+                }
+
+                h3{
+                    font-size: 5.8rem;
+                    margin: 3% 0% 4% 0%;
+                }
+
+                button {
+                    font-size: @buttontext-size;
+                    color: @white;
+                    background-color: @raspberry;
+                    padding: 2% 5%;
+                    border-radius: 10px;
+                }
+            }
+
+            .rightHalf {
+                width: 65%;
+            }
+        }
+    }
+
+    .sectionTwo {
+        flex-direction: column;
+        margin: 0% 8%;
+        padding: 5% 0%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            color: @headingtext-color;
+        }
+    
+        h5 {
+            font-size: 2.1rem;
+            color: @maintext-color;
+            line-height: 1.4;
+            margin: 4% 0% 3% 0%;
+        }
+    }
+
+    .sectionThree {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @bg-color;
+
+        .easySteps {
+            margin: 5% 0% 5% 8%;
+            padding-right: 2%;
+            
+            h4 {
+                font-size: 3.8rem;
+                color: @headingtext-color;
+                text-align: center;
+                padding-right: 2%;
+            }
+        }
+
+        .stepsContainer {
+            margin: 6% 8% 6% 10%;
+
+            .threeSteps {
+                list-style-position: outside;
+                color: @maintext-color;
+                
+                li {
+                    font-size: 2.1rem;
+                    padding: 3% 0%;
+                    line-height: 1.4;
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+
+    .sectionFour {
+        flex-direction: column;
+        margin: 4% 8% 5% 8%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            color: @headingtext-color;
+            padding-bottom: 4%;
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            
+            .userReview1, .userReview2, .userReview3 {
+                max-width: 100%;
+                justify-content: center;
+                
+                p {
+                    font-size: 2.1rem;
+                    color: @maintext-color;
+                    line-height: 1.5;
+                }
+    
+                h5 {
+                    font-size: 2.1rem;
+                    margin: 3% 0% 6% 0%;
+                    color: @raspberry;
+                }
+            }
+        }
+    }
+
+    .sectionFive {
+        flex-direction: column;
+        .redSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            margin: 4% 0% 4% 8%;
+            color: @headingtext-color;
+        }
+
+        .impact {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0% 8% 5% 8%; 
+
+            .roadWork {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 4% 0%;
+
+                img {
+                    width: 35%;
+                    border-radius: 10px;
+                }
+
+                h5 {
+                    font-size: 2.1rem;
+                    margin-left: 4%;
+                    line-height: 1.5;
+                    color: @maintext-color;
+                }
+            }
+        }
+    }
+
+    .sectionSix {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0% 8%;
+    
+            input {
+                width: 70%;
+                height: 30%;
+                font-size: 1.8rem;
+                border: 1px solid @placeholdertext-color;
+                border-radius: 10px;
+            }
+        }
+    
+    
+        ::placeholder {
+            font-size: 1.8rem;
+            color: @placeholdertext-color;
+            opacity: 1;
+            padding-left: 2%;
+    
+        }
+    
+        button {
+            font-size: 1.8rem;
+            color: @white;
+            background-color: @raspberry;
+            padding: 1.3% 4%;
+            border-radius: 10px;
+            margin: 6% 0% 6% 1%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .sectionOne {
+        padding: 5% 0%;
+        .redSectDefault();
+
+        .containerSectOne {
+            display: flex;
+            margin: 0% 8%;
+            width: 100%;
+            // flex-direction: column;
+            .redSectDefault();
+
+            .leftHalf {
+                width: 100%;
+
+                h2 {
+                    font-size: 3.6rem;
+                }
+
+                h3{
+                    font-size: 4.8rem;
+                    margin: 3% 0% 4% 0%;
+                }
+
+                button {
+                    font-size: @buttontext-size;
+                    color: @white;
+                    background-color: @raspberry;
+                    padding: 2% 5%;
+                    border-radius: 10px;
+                }
+            }
+
+            .rightHalf {
+                width: 65%;
+            }
+        }
+    }
+
+    .sectionTwo {
+        flex-direction: column;
+        margin: 0% 8%;
+        padding: 5% 0%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            color: @headingtext-color;
+        }
+    
+        h5 {
+            font-size: 2.1rem;
+            color: @maintext-color;
+            line-height: 1.4;
+            margin: 4% 0% 3% 0%;
+        }
+    }
+
+    .sectionThree {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @bg-color;
+
+        .easySteps {
+            margin: 5% 0% 5% 8%;
+            padding-right: 2%;
+            
+            h4 {
+                font-size: 3.8rem;
+                color: @headingtext-color;
+                text-align: center;
+                padding-right: 2%;
+            }
+        }
+
+        .stepsContainer {
+            margin: 6% 8% 6% 10%;
+
+            .threeSteps {
+                list-style-position: outside;
+                color: @maintext-color;
+                
+                li {
+                    font-size: 2.1rem;
+                    padding: 3% 0%;
+                    line-height: 1.4;
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+
+    .sectionFour {
+        flex-direction: column;
+        margin: 4% 8% 5% 8%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            color: @headingtext-color;
+            padding-bottom: 4%;
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            
+            .userReview1, .userReview2, .userReview3 {
+                max-width: 100%;
+                justify-content: center;
+                
+                p {
+                    font-size: 2.1rem;
+                    color: @maintext-color;
+                    line-height: 1.5;
+                }
+    
+                h5 {
+                    font-size: 2.1rem;
+                    margin: 3% 0% 6% 0%;
+                    color: @raspberry;
+                }
+            }
+        }
+    }
+
+    .sectionFive {
+        flex-direction: column;
+        .redSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            margin: 4% 0% 4% 8%;
+            color: @headingtext-color;
+        }
+
+        .impact {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0% 8% 5% 8%; 
+
+            .roadWork {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 4% 0%;
+
+                img {
+                    width: 35%;
+                    border-radius: 10px;
+                }
+
+                h5 {
+                    font-size: 2.1rem;
+                    margin-left: 4%;
+                    line-height: 1.5;
+                    color: @maintext-color;
+                }
+            }
+        }
+    }
+
+    .sectionSix {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0% 8%;
+    
+            input {
+                width: 70%;
+                height: 30%;
+                font-size: 1.8rem;
+                border: 1px solid @placeholdertext-color;
+                border-radius: 10px;
+            }
+        }
+    
+    
+        ::placeholder {
+            font-size: 1.8rem;
+            color: @placeholdertext-color;
+            opacity: 1;
+            padding-left: 2%;
+    
+        }
+    
+        button {
+            font-size: 1.8rem;
+            color: @white;
+            background-color: @raspberry;
+            padding: 1.3% 4%;
+            border-radius: 10px;
+            margin: 6% 0% 6% 1%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sectionOne {
+        padding: 5% 0%;
+        .redSectDefault();
+
+        .containerSectOne {
+            display: flex;
+            margin: 0% 8%;
+            width: 100%;
+            flex-direction: column;
+            .redSectDefault();
+
+            .leftHalf {
+                width: 100%;
+
+                h2 {
+                    font-size: 4.6rem;
+                }
+
+                h3{
+                    font-size: 5.8rem;
+                    margin: 3% 0% 4% 0%;
+                }
+
+                button {
+                    font-size: @buttontext-size;
+                    color: @white;
+                    background-color: @raspberry;
+                    padding: 2% 5%;
+                    border-radius: 10px;
+                }
+            }
+
+            .rightHalf {
+                display: none;
+            }
+        }
+    }
+
+    .sectionTwo {
+        flex-direction: column;
+        margin: 0% 8%;
+        padding: 5% 0%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            color: @headingtext-color;
+        }
+    
+        h5 {
+            font-size: 2.1rem;
+            color: @maintext-color;
+            line-height: 1.4;
+            margin: 4% 0% 3% 0%;
+        }
+    }
+
+    .sectionThree {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @bg-color;
+
+        .easySteps {
+            margin: 5% 0% 5% 8%;
+            padding-right: 2%;
+            
+            h4 {
+                font-size: 3.8rem;
+                color: @headingtext-color;
+                text-align: center;
+                padding-right: 2%;
+            }
+        }
+
+        .stepsContainer {
+            margin: 6% 8% 6% 10%;
+
+            .threeSteps {
+                list-style-position: outside;
+                color: @maintext-color;
+                
+                li {
+                    font-size: 2.1rem;
+                    padding: 3% 0%;
+                    line-height: 1.4;
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+
+    .sectionFour {
+        flex-direction: column;
+        margin: 4% 8% 5% 8%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            color: @headingtext-color;
+            padding-bottom: 4%;
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            
+            .userReview1, .userReview2, .userReview3 {
+                max-width: 100%;
+                justify-content: center;
+                
+                p {
+                    font-size: 2.1rem;
+                    color: @maintext-color;
+                    line-height: 1.5;
+                }
+    
+                h5 {
+                    font-size: 2.1rem;
+                    margin: 3% 0% 6% 0%;
+                    color: @raspberry;
+                }
+            }
+        }
+    }
+
+    .sectionFive {
+        flex-direction: column;
+        .redSectDefault();
+
+        h4 {
+            font-size: 3.8rem;
+            margin: 4% 0% 4% 8%;
+            color: @headingtext-color;
+        }
+
+        .impact {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0% 8% 5% 8%; 
+
+            .roadWork {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 4% 0%;
+
+                img {
+                    width: 35%;
+                    border-radius: 10px;
+                }
+
+                h5 {
+                    font-size: 2.1rem;
+                    margin-left: 4%;
+                    line-height: 1.5;
+                    color: @maintext-color;
+                }
+            }
+        }
+    }
+
+    .sectionSix {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0% 8%;
+    
+            input {
+                width: 70%;
+                height: 30%;
+                font-size: 1.8rem;
+                border: 1px solid @placeholdertext-color;
+                border-radius: 10px;
+            }
+        }
+    
+    
+        ::placeholder {
+            font-size: 1.8rem;
+            color: @placeholdertext-color;
+            opacity: 1;
+            padding-left: 2%;
+    
+        }
+    
+        button {
+            font-size: 1.8rem;
+            color: @white;
+            background-color: @raspberry;
+            padding: 1.3% 4%;
+            border-radius: 10px;
+            margin: 6% 0% 6% 1%;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sectionOne {
+        padding: 5% 0%;
+        .redSectDefault();
+
+        .containerSectOne {
+            display: flex;
+            margin: 0% 8%;
+            width: 100%;
+            flex-direction: column;
+            .redSectDefault();
+
+            .leftHalf {
+                width: 100%;
+
+                h2 {
+                    font-size: 2.6rem;
+                }
+
+                h3{
+                    font-size: 3.8rem;
+                    margin: 3% 0% 4% 0%;
+                }
+
+                button {
+                    font-size: 1.8rem;
+                    color: @white;
+                    background-color: @raspberry;
+                    padding: 2% 5%;
+                    border-radius: 10px;
+                }
+            }
+
+            .rightHalf {
+                display: none;
+            }
+        }
+    }
+
+    .sectionTwo {
+        flex-direction: column;
+        margin: 0% 8%;
+        padding: 5% 0%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 2.1rem;
+            color: @headingtext-color;
+        }
+    
+        h5 {
+            font-size: 1.8rem;
+            color: @maintext-color;
+            line-height: 1.4;
+            margin: 4% 0% 3% 0%;
+        }
+    }
+
+    .sectionThree {
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: @bg-color;
+
+        .easySteps {
+            margin: 5% 0% 5% 8%;
+            padding-right: 2%;
+            
+            h4 {
+                font-size: 2.1rem;
+                color: @headingtext-color;
+                text-align: center;
+                padding-right: 2%;
+                line-height: 1.2;
+            }
+        }
+
+        .stepsContainer {
+            margin: 6% 8% 6% 10%;
+
+            .threeSteps {
+                list-style-position: outside;
+                color: @maintext-color;
+                
+                li {
+                    font-size: 1.8rem;
+                    padding: 3% 0%;
+                    line-height: 1.4;
+                    list-style-type: square;
+                }
+            }
+        }
+    }
+
+    .sectionFour {
+        flex-direction: column;
+        margin: 4% 8% 5% 8%;
+        .whiteSectDefault();
+
+        h4 {
+            font-size: 2.1rem;
+            color: @headingtext-color;
+            padding-bottom: 4%;
+        }
+
+        .reviews {
+            display: flex;
+            flex-direction: column;
+            
+            .userReview1, .userReview2, .userReview3 {
+                max-width: 100%;
+                justify-content: center;
+                
+                p {
+                    font-size: 1.8rem;
+                    color: @maintext-color;
+                    line-height: 1.5;
+                }
+    
+                h5 {
+                    font-size: 1.8rem;
+                    margin: 3% 0% 6% 0%;
+                    color: @raspberry;
+                }
+            }
+        }
+    }
+
+    .sectionFive {
+        flex-direction: column;
+        .redSectDefault();
+
+        h4 {
+            font-size: 2.1rem;
+            margin: 4% 0% 4% 8%;
+            color: @headingtext-color;
+        }
+
+        .impact {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            margin: 0% 8% 5% 8%; 
+
+            .roadWork {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: 4% 0%;
+
+                img {
+                    width: 35%;
+                    border-radius: 10px;
+                }
+
+                h5 {
+                    font-size: 1.8rem;
+                    margin-left: 4%;
+                    line-height: 1.5;
+                    color: @maintext-color;
+                }
+            }
+        }
+    }
+
+    .sectionSix {
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0% 8%;
+    
+            input {
+                width: 70%;
+                height: 35%;
+                font-size: 1.8rem;
+                border: 1px solid @placeholdertext-color;
+                border-radius: 10px;
+            }
+        }
+    
+    
+        ::placeholder {
+            font-size: 1.6rem;
+            color: @placeholdertext-color;
+            opacity: 1;
+            padding-left: 2%;
+    
+        }
+    
+        button {
+            font-size: 1.8rem;
+            color: @white;
+            background-color: @raspberry;
+            padding: 1.3% 4%;
+            border-radius: 10px;
+            margin: 6% 0% 6% 1%;
+        }
     }
 }
